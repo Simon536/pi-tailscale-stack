@@ -3,4 +3,7 @@ version: "3"
 services:
   tailscale:
     container_name: tailscale-container
+    build:
+      context: ./build
+      dockerfile: Dockerfile
     
