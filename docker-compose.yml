@@ -8,6 +8,9 @@ services:
       dockerfile: Dockerfile
     environment:
       - SECRET_AUTH_KEY
+    volumes:
+      - /var/lib:/var/lib
+      - /dev/net/tun:/dev/net/tun
     image: tailscale:0.3
     privileged: true
     network_mode: "host"
