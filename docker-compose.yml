@@ -6,5 +6,6 @@ services:
     build:
       context: ./build
       dockerfile: Dockerfile
+    image: tailscale:0.1
     restart: unless-stopped
     
