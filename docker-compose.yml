@@ -11,7 +11,7 @@ services:
     volumes:
       - /var/lib:/var/lib
       - /dev/net/tun:/dev/net/tun
-    image: tailscale:0.4
+    image: tailscale:0.5
     privileged: true
     network_mode: "host"
     restart: unless-stopped
