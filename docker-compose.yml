@@ -7,7 +7,7 @@ services:
       context: ./build
       dockerfile: Dockerfile
     environment:
-      SECRET_AUTH_KEY
+      - SECRET_AUTH_KEY
     image: tailscale:0.1
     restart: unless-stopped
     
