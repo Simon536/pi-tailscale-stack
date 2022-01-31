@@ -8,6 +8,8 @@ services:
       dockerfile: Dockerfile
     environment:
       - SECRET_AUTH_KEY
-    image: tailscale:0.2
+    image: tailscale:0.3
+    privileged: true
+    network_mode: "host"
     restart: unless-stopped
     
