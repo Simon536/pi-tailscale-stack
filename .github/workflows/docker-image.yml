@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build ./build --file build/Dockerfile --tag pi-tailscale:$(date +%s)
+      run: docker build ./build --file build/Dockerfile --tag pi-tailscale:$(date +%s) --build-arg secret_auth_key=${{ secrets.TAILSCALE_AUTH_KEY }}
