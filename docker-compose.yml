@@ -6,4 +6,5 @@ services:
     build:
       context: ./build
       dockerfile: Dockerfile
+    restart: unless-stopped
     
