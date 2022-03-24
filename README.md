@@ -5,6 +5,8 @@ This repository is intended to be deployed using Portainer into a Docker environ
 
 When creating the stack in Portainer, add an environment variable named `SECRET_AUTH_KEY`. This variable should contain the Tailscale key which allows the client to connect to the network.
 
+![](img/screenshot1.png)
+
 **Tested on Portainer 2.11.0 and Docker 20.10.12**
 
 For more information on Tailscale, visit [tailscale.com](https://tailscale.com/).
